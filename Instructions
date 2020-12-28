@@ -1,0 +1,54 @@
+Note : Username and message can be anything we can provide.
+
+Use postman to get the response :
+
+Request Type : POST
+URL : http://localhost:8080/message
+RequestEntity : {
+    "userName": "Sachin",
+    "message": "Demo from #Sachin #Sachin #Sachin #Sachin #Sachin #Sachin #saching #key #key1 #key2 #key2 #key3 #key4 #Sachin1 #Sachin2 #Sachin3 #key6 #Sachin123 #Sachin12123 #Sachin232132" 
+}
+
+Response Entity :
+[
+    {
+        "trendTagName": "#Sachin",
+        "tweetCount": 6
+    },
+    {
+        "trendTagName": "#key2",
+        "tweetCount": 2
+    },
+    {
+        "trendTagName": "#Sachin3",
+        "tweetCount": 1
+    },
+    {
+        "trendTagName": "#key6",
+        "tweetCount": 1
+    },
+    {
+        "trendTagName": "#Sachin232132",
+        "tweetCount": 1
+    },
+    {
+        "trendTagName": "#key4",
+        "tweetCount": 1
+    },
+    {
+        "trendTagName": "#key3",
+        "tweetCount": 1
+    },
+    {
+        "trendTagName": "#key1",
+        "tweetCount": 1
+    },
+    {
+        "trendTagName": "#key",
+        "tweetCount": 1
+    },
+    {
+        "trendTagName": "#Sachin1",
+        "tweetCount": 1
+    }
+]
