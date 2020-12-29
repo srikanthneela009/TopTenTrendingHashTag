@@ -44,10 +44,6 @@ public class MessageController {
 		try {
 
 			if (message != null) {
-				ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-				Validator validator = factory.getValidator();
-				validator.validate(message);
-
 				topHashTags = messageService.getAndUpdateTopHashtag(message.getMessage());
 			}
 		} catch (Exception ex) {
